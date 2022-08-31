@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+{% block title %}Signup{% endblock %}
+{% block head %}Create new account{% endblock %}
+{% block nav %}SignUp{% endblock %}
+
+{% block content %}
+	{% with messages = get_flashed_messages() %}
+		{% if messages %}
+			{% for msg in messages %}
+				<p>{{msg}}</p>
+			{% endfor %}
+		{% endif %}
+	{% endwith %}
+
+		
+<div class="form">
+	<form action="#" method="post">
+
+		<label for="em">Email:</label><br>
+		<input type="email" name="new_email" id="em"><br>
+
+		<label for="usr">New Username:</label><br>
+		<input type="text" name="new_nm" id="usr"><br>
+
+		<label for="pass">Create Password:</label><br>
+		<input type="Password" name="new_pw",id="pass"><br>
+
+		<input type="submit" name="sub" value="Create account">
+
+	</form>
+</div>
+
+<a  href="/login"><button class = "crn_btn">aldready have an account? Login</button></a>
+
+{% endblock %}

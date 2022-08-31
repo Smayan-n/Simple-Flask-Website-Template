@@ -1,0 +1,95 @@
+.heading{
+	text-align : center;
+	background-color: #99fdff;
+	border: 6px #4dfcff;
+	border-style: ridge;
+
+	position: sticky;
+	top: 0;
+
+}
+
+.form{
+	text-align: center;
+	position: relative;
+
+}
+
+.crn_btn{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	width: 20%;
+	box-sizing: border-box;
+	background-color: red;
+ 	border: 3px groove black;
+ 	border-radius: 5px;
+}
+
+
+input[type=text], input[type=password],input[type=email]  {
+  width: 40%;
+  padding: 10px 16px;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 5px;
+
+
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus {
+  background-color: #ff9933;
+}
+
+
+input[type=submit] {
+  width: 30%;
+  padding: 10px 16px;
+  margin: 8px;
+  box-sizing: border-box;
+  background-color: orange;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+
+input[type=submit].usr {
+  width: 15%;
+  padding: 10px 12px;
+  margin: 8px;
+  box-sizing: border-box;
+  background-color: orange;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+#email{
+	width: 30%;
+  	padding: 10px 16px;
+  	margin: 8px;
+  	box-sizing: border-box;
+ 	border: 2px solid black;
+  	border-radius: 5px;
+
+
+
+}
+
+
+
+
+
+
+.inputBox{
+  position: absolute;
+  width: 500px;
+  height: 368px;
+  z-index: -1;
+  top: 40%;
+  left: 39%;
+  margin: -100px 0 0 -150px;
+  background: aqua;
+
+
+}

@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %}Login Page{% endblock %}
+{% block head %}Account Login{% endblock %}
+{% block nav %}Login{% endblock %}
+
+{% block content %}
+	{% with messages = get_flashed_messages() %}
+		{% if messages %}
+			{% for msg in messages %}
+				<p>{{msg}}</p>
+			{% endfor %}
+		{% endif %}
+	{% endwith %}
+
+		
+<div class="form">
+	<form action="#" method="post">
+
+		<label for="usr">Username:</label><br>
+		<input type="text" name="nm" id="usr"><br>
+		<label for="pass">Password:</label><br>
+		<input type="Password" name="pw" id="pass"><br>
+		<input type="submit" name="sub" value="Login">
+
+	</form>
+</div>
+
+<a  href="/signup"><button class = "crn_btn">Have no account? Create one</button></a>
+
+{% endblock %}
